@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+
+<body>
+    <header class="bg-[#181532] py-4">
+        <nav class="flex justify-between items-center w-[92%] mx-auto">
+            <div>
+                <img src="/images/logo.png" alt="Logo">
+            </div>
+            <div
+                class="nav-links duration-500 md:static absolute bg-[#181532] md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+                    <li><a class="hover:text-gray-500 text-white" href="#">HOME</a></li>
+                    <li><a class="hover:text-gray-500 text-white" href="#">ABOUT</a></li>
+                    <li><a class="hover:text-gray-500 text-white" href="#">QUEST</a></li>
+                    <li><a class="hover:text-gray-500 text-white" href="#">TICKETS</a></li>
+                    <li><a class="hover:text-gray-500 text-white" href="#">CHARACTERS</a></li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-6">
+                <button class="bg-[#F6C567] text-black px-5 py-2 hover:bg-[#87acec]">BUY TICKET 📜</button>
+                <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+            </div>
+        </nav>
+    </header>
+
+    <script>
+        const navLinks = document.querySelector('.nav-links')
+        function onToggleMenu(e) {
+            e.name = e.name === 'menu' ? 'close' : 'menu'
+            navLinks.classList.toggle('top-[9%]')
+        }
+    </script>
+
+    <div class="bg-[#f7d99e]">
+        <div class="container mx-auto ">
+            <div class="section-1 flex flex-col md:flex-row items-center">
+                <div class="text-content md:w-1/2 p-4">
+                    <div class="heading text-4xl font-bold mb-4">DAY QUEST</div>
+                    <div class="description text-lg mb-6">
+                        Embark on an epic Day Quest at the Fantasy Festival! This interactive adventure will take you on a journey through the festival grounds, challenging you with puzzles, riddles, and tasks inspired by your favorite fantasy stories. Perfect for adventurers of all ages, the Day Quest offers a chance to dive deeper into the magical world of the festival, uncovering hidden secrets and earning rewards along the way. Gather your team, embrace your inner hero, and conquer the Day Quest for a truly unforgettable festival experience!
+                    </div>
+                    <div class="subheadings flex justify-between mb-6">
+                        <div class="subheading w-1/2 mr-2">
+                            <h2 class="subheading-1 text-2xl mb-2">Subheading one</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+                        </div>
+                        <div class="subheading w-1/2 ml-2">
+                            <h2 class="subheading-1 text-2xl mb-2">Subheading two</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+                        </div>
+                    </div>
+                    <a href="#" class="ticket-button bg-[#2a2a2a] text-white px-4 py-2 rounded hover:bg-[#444444]">Get your ticket 📜</a>
+                </div>
+                <div class="image-content md:w-1/2 p-4 text-center">
+                    <img src="/images/dayportal.png" alt="Tree with crows" class="mx-auto">
+                </div>
+            </div>
+
+            <div class="banner-image">
+                <img src="/images/esbjerg.png" alt="Banner">
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-[#181532] text-white">
+        <div class="container mx-auto px-4 py-10">
+            <div class="section-2 flex flex-col md:flex-row items-center">
+                <div class="text-content md:w-1/2 p-4">
+                    <div class="heading text-4xl font-bold mb-4">EVENING QUEST</div>
+                    <div class="description text-lg mb-6">
+                        Discover the enchantment of the Fantasy Festival after dark with our Evening Quest! Venture into the night alongside fellow adventurers for a mystical journey filled with puzzles, challenges, and fantastical encounters. Designed for adult adventurers, this twilight quest promises an unforgettable evening of magic and mystery. Join us and let the Evening Quest illuminate your night with wonder!
+                    </div>
+                    <div class="subheadings flex justify-between mb-6">
+                        <div class="subheading w-1/2 mr-2">
+                            <h2 class="subheading-1 text-2xl mb-2">Subheading one</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+                        </div>
+                        <div class="subheading w-1/2 ml-2">
+                            <h2 class="subheading-1 text-2xl mb-2">Subheading two</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+                        </div>
+                    </div>
+                    <a href="#" class="ticket-button bg-[#F6C567] text-black px-4 py-2 rounded hover:bg-[#87acec]">Get your ticket 📜</a>
+                </div>
+                <div class="image-content md:w-1/2 p-4 text-center">
+                    <img src="/images/Image.png" alt="Portal with creatures" class="mx-auto">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="text-center py-12 bg-[#181532]">
+        <div class="container mx-auto px-4">
+            <h2 class="heading text-4xl font-bold mb-4 text-[#f7d99e]">SELECT YOUR PASS</h2>
+            <p class="text-lg mb-10 text-[#f7d99e]">Choose the perfect pass to unlock all the magic of the Fantasy Festival!</p>
+
+            <div class="flex flex-col md:flex-row justify-center gap-10">
+                <div class="ticket bg-cover bg-no-repeat p-8" style="background-image: url('/images/ticket.png');">
+                    <div class="text-left">
+                        <h3 class="text-3xl font-bold mb-2">DAY QUEST</h3>
+                        <p class="mb-2">Lorem ipsum dolor sit amet</p>
+                        <div class="text-2xl font-bold mb-6">200 DKK</div>
+                        <hr class="border-gray-400 mb-4">
+                        <div class="includes">
+                            <p class="mb-2 flex justify-between"><span>✓ Feature text goes here</span><span>✓ Feature text goes here</span></p>
+                            <p class="mb-2 flex justify-between"><span>✓ Feature text goes here</span><span>✓ Feature text goes here</span></p>
+                        </div>
+                        <a href="#" class="block mt-6 text-center bg-[#0d0d2b] text-white py-2 rounded hover:bg-[#444444]">Buy ticket</a>
+                    </div>
+                </div>
+
+                <div class="ticket bg-cover bg-no-repeat p-8" style="background-image: url('/images/ticket.png');">
+                    <div class="text-left">
+                        <h3 class="text-3xl font-bold mb-2">EVENING QUEST</h3>
+                        <p class="mb-2">Lorem ipsum dolor sit amet</p>
+                        <div class="text-2xl font-bold mb-6">300 DKK</div>
+                        <hr class="border-gray-400 mb-4">
+                        <div class="includes">
+                            <p class="mb-2 flex justify-between"><span>✓ Feature text goes here</span><span>✓ Feature text goes here</span></p>
+                            <p class="mb-2 flex justify-between"><span>✓ Feature text goes here</span><span>✓ Feature text goes here</span></p>
+                        </div>
+                        <a href="#" class="block mt-6 text-center bg-[#0d0d2b] text-white py-2 rounded hover:bg-[#444444]">Buy ticket</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer Section -->
+<footer>
+    <div class="footer-container">
+        <div class="dragon-image">
+            <img src="/images/dragon -footer.png" alt="Dragon Image">
+        </div>
+        <div class="footer-content">
+            <div class="contacts">
+                <h3 class="text-2xl">Contacts</h3><br>
+                <p><i class="fas fa-phone"></i> +45 76 16 20 00</p><br>
+                <p><i class="fas fa-envelope"></i> email@email.dk</p><br>
+                <p><i class="fas fa-map-marker-alt"></i> The main library<br>
+                    Nørregade 19<br>
+                    6700 Esbjerg
+                </p>
+            </div>
+            <div class="follow-us">
+                <h3 class="text-2xl">Follow us</h3><br>  
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fas fa-globe"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+
+</html>
