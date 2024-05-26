@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import './base.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    @font-face {
+        font-family: 'CELTG';
+        src: url('../assets/fonts/CELTG___.TTF') format('ttf'), url('../assets/fonts/CELTG___.TTF');
+        font-style: normal;
+    }
+}
