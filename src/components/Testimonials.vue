@@ -2,7 +2,7 @@
 <section class="text-center py-20 px-6">
     <div class="container mx-auto ">
         <h2 class="text-4xl font-title font-semibold tracking-wider mb-4 text-black">CUSTOMER TESTIMONIALS</h2>
-        <p class="text-lg mb-20 font-body">
+        <p class="text-lg mb-12 font-body">
             Hear from those who have experienced the magic of the Fantasy Festival. Our attendees share their
             unforgettable moments, favorite events, and how the festival has inspired their love for fantasy.
         </p>
