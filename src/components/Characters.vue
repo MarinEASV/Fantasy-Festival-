@@ -1,11 +1,11 @@
 <template>
-    <section class="character-section bg-yellow py-20 px-6">
+    <section class="py-20 px-6">
       <div class="container mx-auto text-center">
         <h2 class="text-4xl font-bold font-title tracking-wider mb-4">MEET OUR CHARACTERS</h2>
-        <p class="font-body text-lg mb-8">Step into a world of enchantment with our diverse cast of characters. <br> From brave
+        <p class="font-body text-lg mb-20">Step into a world of enchantment with our diverse cast of characters. <br> From brave
           heroes to mystical creatures, each one brings unique magic to the Fantasy Festival.</p>
         
-        <div class="flex flex-wrap justify-center items-center space-x-8 space-y-8">
+        <div class="flex flex-wrap justify-center justify-items-center items-center gap-8">
   
           <div class="character-item relative" @mouseenter="playVideo($event)" @mouseleave="pauseVideo($event)">
             <video class="character-video" loop muted>
@@ -77,10 +77,7 @@
   </script>
   
   <style lang="scss" scoped>
-  .character-section {
-    background-color: #f8f8f8;
-  }
-  
+ 
   .character-item,
   .character-item-6 {
     position: relative;
