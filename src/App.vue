@@ -1,7 +1,8 @@
 <script setup>
-import Hero from './components/Hero.vue'
 import Navbar from './components/Navbar.vue'
+import Hero from './components/Hero.vue'
 import About from './components/About.vue';
+import Countdown from './components/Countdown.vue';
 import Quests from './components/Quests.vue';
 import Select from './components/Select.vue';
 import Characters from './components/Characters.vue';
@@ -14,6 +15,7 @@ import Footer from './components/Footer.vue'
 <Navbar />
 <Hero />
 <About />
+<Countdown />
 <Quests />
 <Select />
 <Characters />
