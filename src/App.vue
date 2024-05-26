@@ -5,7 +5,7 @@ import About from './components/About.vue';
 import Quests from './components/Quests.vue';
 import Select from './components/Select.vue';
 import Characters from './components/Characters.vue';
-
+import Testimonials from './components/Testimonials.vue';
 import Partners from './components/Partners.vue';
 import Footer from './components/Footer.vue'
 </script>
@@ -17,7 +17,7 @@ import Footer from './components/Footer.vue'
 <Quests />
 <Select />
 <Characters />
-
+<Testimonials />
 <Partners />
 <Footer />
 </template>
