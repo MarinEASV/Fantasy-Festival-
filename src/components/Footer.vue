@@ -4,7 +4,7 @@
             <div class="dragon-image">
                 <img src="../assets/dragon-footer.png" alt="Dragon Image" class="mx-auto md:mx-0">
             </div>
-            <div class="flex flex-col md:flex-row justify-end w-full md:w-auto">
+            <div class="flex flex-col md:flex-row justify-end w-full md:w-auto pl-32 md:pl-0">
                 <div class="me-0 md:me-24 mb-8 md:mb-0">
                     <h3 class="text-2xl font-title">Contacts</h3><br>
                     <p><i class="fas fa-phone"></i> +45 76 16 20 00</p><br>
@@ -14,9 +14,9 @@
                 <div class="me-0 md:me-8">
                     <h3 class="text-2xl font-title">Follow us</h3><br>
                     <div class="flex gap-4 justify-left md:justify-start">
-                        <a href="#"><i class="fab fa-facebook text-2xl hover:text-yellow"></i></a>
-                        <a href="#"><i class="fab fa-instagram text-2xl hover:text-yellow"></i></a>
-                        <a href="#"><i class="fas fa-globe text-2xl hover:text-yellow"></i></a>
+                        <a href="https://www.facebook.com/fantasyfestivalen/?locale=da_DK" target="_blank" ><i class="fab fa-facebook text-3xl hover:text-yellow"></i></a>
+                        <a href="https://www.instagram.com/fantasyfestivalen/" target="_blank" ><i class="fab fa-instagram text-3xl hover:text-yellow"></i></a>
+                        <a href="https://fantasyfestival.dk/" target="_blank" ><i class="fa-solid fa-globe text-3xl hover:text-yellow"></i></a>
                     </div>
                 </div>
             </div>
@@ -24,9 +24,8 @@
     </footer>
 </template>
   
-  <script setup>
-  // No additional script needed for this setup
-  </script>
+<script setup>
+</script>
   
   <style lang="scss" scoped>
   /* Footer Section */
