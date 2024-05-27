@@ -4,8 +4,8 @@
         <h2 class="text-4xl px-6 font-semibold font-title tracking-widest leading-snug mb-4 text-yellow">SELECT YOUR PASS</h2>
         <p class="text-lg mb-10 text-yellow px-6 font-body ">Choose the perfect pass to unlock all the magic of the Fantasy Festival!</p>
   
-        <div class="flex flex-col md:flex-row justify-center gap-8">
-          <div class="ticket bg-cover bg-no-repeat p-10 object-cover overflow-hidden">
+        <div class="flex flex-col lg:flex-row justify-center gap-8">
+          <div class="ticket bg-cover bg-no-repeat p-10 object-cover overflow-hidden mx-auto lg:m-0">
             <div class="p-12">
               <h3 class="text-2xl font-bold font-title tracking-wide mb-2 text-left">DAY QUEST</h3>
               <p class="mb-6 text-left font-body text-lg">Standard ticket - Family Quest</p>
@@ -23,7 +23,7 @@
             </div>
           </div>
   
-          <div class="ticket bg-cover bg-no-repeat p-10 object-cover overflow-hidden">
+          <div class="ticket bg-cover bg-no-repeat p-10 object-cover overflow-hidden mx-auto lg:m-0 ">
             <div class="p-12">
               <h3 class="text-2xl font-bold font-title tracking-wide mb-2 text-left">EVENING QUEST</h3>
               <p class="mb-6 text-left font-body text-lg">Standard ticket - Fantasy Quest</p>
