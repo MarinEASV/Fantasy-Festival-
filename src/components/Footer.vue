@@ -4,7 +4,7 @@
             <div class="dragon-image">
                 <img src="../assets/dragon-footer.png" alt="Dragon Image" class="mx-auto md:mx-0">
             </div>
-            <div class="flex flex-col md:flex-row justify-end w-full md:w-auto pl-32 md:pl-0">
+            <div class="flex flex-col md:flex-row justify-end w-full md:w-auto pl-40 md:pl-0">
                 <div class="me-0 md:me-24 mb-8 md:mb-0">
                     <h3 class="text-2xl font-title">Contacts</h3><br>
                     <p><i class="fas fa-phone"></i> +45 76 16 20 00</p><br>
@@ -20,6 +20,9 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="flex justify-center text-center mt-12 ">
+            <p>&copy; 2024 Created by MJCG</p>
         </div>
     </footer>
 </template>
