@@ -1,5 +1,5 @@
 <template>
-    <section class="bg-yellow pt-20 px-6">
+    <section class="bg-yellow pt-20 px-6" id="quest" >
         <div class="container mx-auto ">
             <div class="flex flex-col md:flex-row items-center">
                 <div class="md:w-1/2">

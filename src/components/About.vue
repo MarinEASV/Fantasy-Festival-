@@ -1,5 +1,5 @@
 <template>
-   <section class="bg-dark_purple text-white py-20 px-6">
+   <section class="bg-dark_purple text-white py-20 px-6" id="about" >
 
 <div class="container md:columns-2  mx-auto">
     <p class="text-lg mb-4 text-yellow">About the Fantasy Festival</p>
