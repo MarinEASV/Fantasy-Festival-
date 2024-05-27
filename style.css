@@ -3,6 +3,7 @@ body {
     font-family: 'OpenSans-Regular';
     margin: 0;
     padding: 0;
+<<<<<<< HEAD
     color: #181532; ;
 }
 
@@ -11,6 +12,9 @@ body {
     position: sticky;
     top: 0;
     z-index: 1000;
+=======
+    color: #2a2a2a;
+>>>>>>> 3f44ccb84911f9feb2ad1105b46d0733e4d5bc84
 }
 
 header {
@@ -113,7 +117,11 @@ header {
     background-color: #F6C567;
 }
 
+<<<<<<< HEAD
 .heading, .subheading-1, .h3, .character-name {
+=======
+.heading, .subheading-1, .h3 {
+>>>>>>> 3f44ccb84911f9feb2ad1105b46d0733e4d5bc84
     font-family: 'Celtic Garamond the 2nd';
 }
 
@@ -171,6 +179,7 @@ header {
     padding-top: 0px;
 }
 
+<<<<<<< HEAD
 .block-1 {
     margin-bottom: 30px;
 }
@@ -179,6 +188,8 @@ header {
     margin-bottom: 30px;
 }
 
+=======
+>>>>>>> 3f44ccb84911f9feb2ad1105b46d0733e4d5bc84
 
 /* Footer Section */
 footer {
@@ -221,7 +232,11 @@ margin-left: 170px;
 }
 
 .contacts p, .follow-us a {
+<<<<<<< HEAD
     font-family: 'OpenSans-Regular';
+=======
+    font-family: 'Poppins', sans-serif;
+>>>>>>> 3f44ccb84911f9feb2ad1105b46d0733e4d5bc84
     font-size: 16px;
     margin: 5px 0;
     color: white;
@@ -262,6 +277,7 @@ margin-left: 170px;
     }
 }
 
+<<<<<<< HEAD
 
 
 
@@ -340,3 +356,5 @@ margin-left: 170px;
         background-color: #000;
     }
 
+=======
+>>>>>>> 3f44ccb84911f9feb2ad1105b46d0733e4d5bc84
