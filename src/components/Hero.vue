@@ -56,7 +56,7 @@ onUnmounted(() => {
 .parallax {
   perspective: 1px;
   position: relative;
-  height: 100vh; /* Ensure the hero section occupies the full viewport height */
+  height: 100vh;
 }
   
 .parallax-layer {
