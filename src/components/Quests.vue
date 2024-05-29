@@ -1,7 +1,7 @@
 <template>
-    <section class="bg-yellow pt-20 px-6" id="quest" >
-        <div class="container mx-auto ">
-            <div class="flex flex-col md:flex-row items-center">
+    <section class="bg-yellow px-6" id="quest" >
+        <div class="container mx-auto pt-28">
+            <div class="flex flex-col md:flex-row items-center mb-24 ">
                 <div class="md:w-1/2">
                     <h2 class="text-4xl font-bold font-title tracking-widest pb-6">DAY QUEST</h2>
                     <p class="text-lg pb-10 font-body ">Embark on an epic Day Quest at the Fantasy Festival! This interactive
@@ -24,12 +24,12 @@
                     </div>
 
                     <a href="https://www.universe.com/events/family-quest-dagquest-tickets-C6PYX3" target=”_blank”>
-                        <button class="bg-dark_purple hover:bg-violet-900 text-white font-semibold font-body p-4 text-lg mt-4" >
+                        <button class="bg-dark_purple hover:bg-violet-900 text-white font-semibold font-body p-4 px-8 text-lg mt-4" >
                             Get your ticket 📜
                         </button>
                     </a>
                 </div>
-                <div class="image-content md:w-1/2 text-center">
+                <div class="image-content md:w-1/2 text-center pt-8 ">
                     <img src="../assets/dayportal.png" alt="Tree with crows" class="mx-auto">
                 </div>
             </div>
@@ -37,7 +37,7 @@
         </div>
     </section>
 
-    <section class="bg-dark_purple py-20 px-6 text-white">
+    <section class="bg-dark_purple py-36 px-6 text-white">
         <div class="container mx-auto">
             <div class="flex flex-col md:flex-row items-center">
                 <div class="md:w-1/2">
@@ -62,7 +62,7 @@
                     </div>
 
                     <a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4" target=”_blank”>
-                        <button class="bg-yellow hover:bg-amber-400 text-black font-semibold font-body p-4 text-lg mt-4" >
+                        <button class="bg-yellow hover:bg-amber-400 text-black font-semibold font-body p-4 px-8 text-lg mt-4" >
                             Get your ticket 📜
                         </button>
                     </a>

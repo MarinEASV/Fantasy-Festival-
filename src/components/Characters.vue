@@ -1,5 +1,5 @@
 <template>
-    <section class="py-20 px-6" id="characters">
+    <section class="py-28 px-6" id="characters">
       <div class="container mx-auto text-center">
         <h2 class="text-4xl font-bold font-title tracking-wider mb-4">MEET OUR CHARACTERS</h2>
         <p class="font-body text-lg mb-12">Step into a world of enchantment with our diverse cast of characters. <br> From brave

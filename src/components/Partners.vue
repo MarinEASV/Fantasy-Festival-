@@ -1,5 +1,5 @@
 <template>
-    <section class="meet-you-there bg-[#181532] py-20 px-6 flex flex-col items-center">
+    <section class="meet-you-there bg-[#181532] py-28 px-6 flex flex-col items-center">
         <h2 class=" text-white text-4xl text-center font-semibold tracking-widest leading-snug mb-8 font-title">MEET YOU THERE!</h2>
         <a class="mx-auto" href="#tickets">
             <button class="bg-yellow hover:bg-amber-400 text-black font-bold font-body p-4 px-20 text-lg mt-4">
