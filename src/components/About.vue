@@ -16,7 +16,7 @@
     </p>
     <h3 class="text-3xl mb-4 font-title tracking-wide ">Join for free</h3>
     <p class="text-lg font-body">
-      There is free entry to the fair in Riddersalen and on the Market Square and Esehaven outside.There is also free entry at Esbjerg Court and Arrest House, Street Food and BROEN Shopping Center.The fantasy festival is open to visitors on Saturday 14 September at 10-18 and Sunday 15 September at 10-16. 
+      There is free entry to the fair in Riddersalen and on the Market Square and Esehaven outside.There is also free entry at Esbjerg Court and Arrest House, Street Food and BROEN Shopping Center.The fantasy festival is open to visitors on Saturday 14 September at 10-18. 
     </p>
   </div>
   </section>

@@ -2,7 +2,7 @@
     <footer class="bg-dark_purple py-20 px-6 text-white font-body text-lg">
         <div class="container mx-auto flex flex-col md:flex-row justify-around gap-12">
             <div class="dragon-image">
-                <img src="../assets/dragon-footer.png" alt="Dragon Image" class="mx-auto md:mx-0">
+                <img src="../assets/purple-dragon.svg" alt="Dragon Image" class="mx-auto md:mx-0">
             </div>
             <div class="flex flex-col md:flex-row justify-end w-full md:w-auto pl-40 md:pl-0">
                 <div class="me-0 md:me-24 mb-8 md:mb-0">
