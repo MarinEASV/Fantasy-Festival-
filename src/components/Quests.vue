@@ -4,7 +4,7 @@
             <div class="flex flex-col md:flex-row items-center">
                 <div class="md:w-1/2">
                     <h2 class="text-4xl font-bold font-title tracking-widest pb-6">DAY QUEST</h2>
-                    <p class="text-lg pb-10 font-body ">Embark on an epic Day Quest at the Fantasy Festival! This interactive
+                    <p class="text-lg pb-10 font-body ">Challenge on an epic Day Quest at the Fantasy Festival! This interactive
                         adventure will take you on a journey through the festival grounds, challenging you with puzzles,
                         riddles, and tasks inspired by your favorite fantasy stories. Perfect for adventurers of all
                         ages, the Day Quest offers a chance to dive deeper into the magical world of the festival,
@@ -25,7 +25,7 @@
 
                     <a href="https://www.universe.com/events/family-quest-dagquest-tickets-C6PYX3" target=”_blank”>
                         <button class="bg-dark_purple hover:bg-violet-900 text-white font-semibold font-body p-4 text-lg mt-4" >
-                            Get your ticket 📜
+                            Get your ticket!
                         </button>
                     </a>
                 </div>
@@ -63,7 +63,7 @@
 
                     <a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4" target=”_blank”>
                         <button class="bg-yellow hover:bg-amber-400 text-black font-semibold font-body p-4 text-lg mt-4" >
-                            Get your ticket 📜
+                            Get your ticket!
                         </button>
                     </a>
                 </div>
