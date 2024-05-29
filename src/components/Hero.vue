@@ -1,77 +1,143 @@
 <template>
-    <section class="parallax overflow-hidden relative h-screen">
-        <!-- Desktop Background Image -->
-        <img src="../assets/HERO/Hero-BG.png" alt="Background" class="z-0 w-full h-full object-cover ">
-        
-        <!-- Mobile Background Image -->
-        <img src="../assets/HERO/Hero-BG-mobile.jpg" alt="Background Mobile" class="z-0 w-full h-full object-cover background-mobile">
-        
-        <!-- Always Visible Heading -->
-        <h1 class="text-9xl absolute text-white text-center z-10 w-full top-1/3 transform -translate-y-1/2 font-title">Fantasy Quest</h1>
-        
-        <!-- Parallax Layers -->
-        <img src="../assets/HERO/statues.png" alt="Statues" class="z-20 parallax-layer">
-        <img src="../assets/HERO/cloud-left.png" alt="Clouds Left" class="parallax-layer left">
-        <img src="../assets/HERO/cloud-right.png" alt="Clouds Right" class="parallax-layer right">
-    </section>  
-  </template>
+  <section class="parallax overflow-hidden relative h-screen" id="home">
+    <!-- Desktop Background Image -->
+    <img src="../assets/HERO/Hero-BG.png" alt="Background" class="z-0 w-full h-full object-cover background-desktop">
+
+    <!-- Mobile Background Image -->
+    <img src="../assets/HERO/Hero-BG-mobile.jpg" alt="Background Mobile" class="z-0 w-full h-full object-cover background-mobile">
+
+    <!-- Always Visible Heading -->
+    <h1 :class="{ 'heading': true, 'static-heading': isMobile }" class="text-8xl sm:text-9xl absolute text-white text-center z-20 w-full font-title font-semibold">Fantasy Quest</h1>
+
+    <!-- Parallax Layers -->
+    <img src="../assets/HERO/statues.png" alt="Statues" class="z-50 parallax-layer statues">
+    <img src="../assets/HERO/cloud-left.png" alt="Clouds Left" class="parallax-layer left animate-cloud-left">
+    <img src="../assets/HERO/cloud-right.png" alt="Clouds Right" class="parallax-layer right animate-cloud-right">
+  </section>
+</template>
+
+<script setup>
+import { ref, onMounted, onUnmounted } from 'vue';
+
+const isMobile = window.innerWidth <= 800;
+
+const handleScroll = () => {
+  if (!isMobile) {
+    const parallaxLayers = document.querySelectorAll('.parallax-layer');
+    parallaxLayers.forEach(layer => {
+      const depth = layer.getAttribute('data-depth');
+      const movement = (window.scrollY * depth) / 10;
+      layer.style.transform = `translate3d(0, ${movement}px, 0)`;
+    });
+
+    // Adjust the heading position based on scroll position
+    const scrollPosition = window.scrollY;
+    const heading = document.querySelector('.heading');
+    if (heading) {
+      heading.style.top = `calc(25% + ${scrollPosition}px)`;
+    }
+  }
+};
+
+onMounted(() => {
+  if (!isMobile) {
+    window.addEventListener('scroll', handleScroll);
+  }
+});
+
+onUnmounted(() => {
+  if (!isMobile) {
+    window.removeEventListener('scroll', handleScroll);
+  }
+});
+</script>
   
-  <script setup>
-  </script>
+<style lang="scss" scoped>
+.parallax {
+  perspective: 1px;
+  position: relative;
+  height: 100vh; /* Ensure the hero section occupies the full viewport height */
+}
   
-  <style lang="scss" scoped>
-  .parallax-layer {
-              position: absolute;
-              top: 330px;
-              will-change: transform;
-          }
+.parallax-layer {
+  position: absolute;
+  will-change: transform;
+}
   
-          .parallax {
-              perspective: 1px;
-              overflow-x: hidden;
-              overflow-y: auto;
-              position: relative;
-          }
+.statues {
+  top: 330px;
+}
   
-          .left {
-              top: 120px;
-              left: 0%;
-              width: 38%;
-          }
+.left {
+  top: 120px;
+  left: -1px;
+  width: 38%;
+}
   
-          .right {
-              top: 90px;
-              left: 62%;
-              width: 38%;
-          }
+.right {
+  top: 90px;
+  left: 62%;
+  width: 38%;
+}
   
-          @media (max-width: 640px) {
-              .parallax-layer,
-              .parallax img {
-                  position: static;
-                  will-change: auto;
-              }
+.animate-cloud-left {
+  animation: moveLeft 3s ease-in-out ;
+}
   
-              .parallax h1 {
-                  position: relative;
-                  top: auto;
-                  transform: none;
-                  margin-top: 20vh;
-              }
+.animate-cloud-right {
+  animation: moveRight 3s ease-in-out ;
+}
   
-              .background {
-                  display: none;
-              }
+@keyframes moveLeft {
+  0% {
+    transform: translateX(-60%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
   
-              .background-mobile {
-                  display: block;
-              }
-          }
+@keyframes moveRight {
+  0% {
+    transform: translateX(60%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
   
-          @media (min-width: 640px) {
-              .background-mobile {
-                  display: none;
-              }
-          }
-  </style>
+.background-desktop {
+  display: block;
+}
   
+.background-mobile {
+  display: none;
+}
+  
+.static-heading {
+  position: absolute;
+  top: 30%;
+  transform: translateY(-300%);
+}
+
+@media (max-width: 800px) {
+  .parallax-layer,
+  .background-desktop {
+    display: none;
+  }
+
+  .background-mobile {
+    display: block;
+  }
+
+  .heading {
+    position: static;
+  }
+}
+
+@media (min-width: 801px) {
+  .background-mobile {
+    display: none;
+  }
+}
+</style>
