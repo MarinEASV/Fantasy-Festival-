@@ -53,6 +53,10 @@ onUnmounted(() => {
 </script>
   
 <style lang="scss" scoped>
+.heading {
+  top: 25%;
+  transition: top 0.1s;
+}
 .parallax {
   perspective: 1px;
   position: relative;

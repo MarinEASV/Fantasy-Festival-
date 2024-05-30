@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar fixed w-full bg-dark_purple bg-opacity-70 z-50 font-body text-white text-lg py-4 px-6 sm:px-8 lg:px-14 xl:28">
+  <nav class="navbar fixed w-full bg-dark_purple bg-opacity-70 z-50 font-body text-white text-lg py-4 px-6 sm:px-8 lg:px-20 xl:28">
     <a href="#home" class="logo-link">
       <img src="../assets/logo.png" alt="FantasyFestival Logo"/>
     </a>
