@@ -1,134 +1,97 @@
 <template>
     <section class="text-center py-24 px-6">
-        <div class="container mx-auto">
-            <h2 class="text-4xl md:text-5xl font-title font-semibold tracking-tight leading-relaxed mb-6 text-black">CUSTOMER TESTIMONIALS</h2>
-            <p class="text-lg mb-12 font-body">
-                Hear from those who have experienced the magic of the Fantasy Festival. Our attendees share their
-                unforgettable moments, favorite events, and how the festival has inspired their love for fantasy.
-            </p>
-
-            <div class="testimonial-carousel">
-                <div class="testimonial-container flex items-center justify-between">
-                    <button class="arrow left-arrow bg-gray-200 text-black p-2 rounded-full">
-                        &larr;
-                    </button>
-
-                    <div class="testimonials flex flex-col md:flex-row justify-center gap-10">
-                        <div class="testimonial-pair flex flex-row gap-10">
-                            <div class="testimonial text-center max-w-md">
-                                <img src="../assets/image-jeanette.jpg" alt="Rachel Green" class="mx-auto rounded-full w-24 h-24 mb-4">
-                                <h3 class="text-xl font-semibold mb-2">Emma Hansen</h3>
-                                <p class="font-body text-base italic text-gray-600">
-                                    "I attended the Fantasy Festival last year, and it was an incredible experience! The variety of activities and events kept me engaged all weekend. Meeting my favorite authors and discovering new ones was a highlight, and the atmosphere was truly magical. The children's workshops were fantastic for my kids, sparking their creativity and love for reading. I can't wait to return this year and see what new adventures await!"
-                                </p>
-                            </div>
-
-                            <div class="testimonial text-center max-w-md">
-                                <img src="../assets/image-daniel.jpg" alt="Ross Geller" class="mx-auto rounded-full w-24 h-24 mb-4">
-                                <h3 class="text-xl font-semibold mb-2">Søren Andersen</h3>
-                                <p class="font-body text-base italic text-gray-600">
-                                    "Fantasy Festival exceeded all my expectations! From fascinating panel discussions to immersive role-playing games, every moment was filled with excitement. The highlight for me was meeting RF Kuang and attending her lecture. The festival is perfect for all ages, and my family had a blast exploring the children's area and participating in creative workshops. It's a must-visit event for any fantasy fan!"
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="testimonial-pair flex flex-row gap-10">
-                            <div class="testimonial text-center max-w-md">
-                                <img src="../assets/image-kira.jpg" alt="Ross Geller" class="mx-auto rounded-full w-24 h-24 mb-4">
-                                <h3 class="text-xl font-semibold mb-2">Sofie Larsen</h3>
-                                <p class="font-body text-base italic text-gray-600">
-                                    "Attending the Fantasy Festival was an unforgettable experience! The themed areas and interactive activities were incredible. I particularly enjoyed the live-action role-play events and the chance to meet my favorite fantasy authors. The atmosphere was magical, and there was something for everyone, from kids to adults. We will definitely be coming back next year!"
-                                </p>
-                            </div>
-
-                            <div class="testimonial text-center max-w-md">
-                                <img src="../assets/image-jonathan.jpg" alt="Ross Geller" class="mx-auto rounded-full w-24 h-24 mb-4">
-                                <h3 class="text-xl font-semibold mb-2">Mads Nielsen</h3>
-                                <p class="font-body text-base italic text-gray-600">
-                                    "The Fantasy Festival is a dream come true for any fantasy enthusiast. The variety of workshops and panels provided so much insight and inspiration. My favorite part was the cosplay competition, where I saw amazing costumes and met fellow fans. The whole event was well-organized, and the staff were extremely friendly and helpful. I can't recommend it enough!"
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <button class="arrow right-arrow bg-gray-200 text-black p-2 rounded-full">
-                        &rarr;
-                    </button>
-                </div>
-
-                <div class="dots mt-6 flex justify-center space-x-2">
-                    <span class="dot w-3 h-3 bg-gray-400 rounded-full"></span>
-                    <span class="dot w-3 h-3 bg-gray-200 rounded-full"></span>
-                </div>
+      <div class="container mx-auto">
+        <h2 class="text-4xl md:text-5xl font-title font-semibold tracking-tight leading-relaxed mb-6 text-black">CUSTOMER TESTIMONIALS</h2>
+        <p class="text-lg mb-12 font-body">
+          Hear from those who have experienced the magic of the Fantasy Festival. Our attendees share their
+          unforgettable moments, favorite events, and how the festival has inspired their love for fantasy.
+        </p>
+  
+        <div class="testimonial-carousel">
+          <div class="testimonial-container flex items-center justify-between">
+            <button @click="prevSlide" class="arrow left-arrow bg-gray-200 text-black p-2 rounded-full">
+              &larr;
+            </button>
+  
+            <div :class="['testimonials flex', isSmallScreen ? 'flex-col' : 'flex-col md:flex-row']">
+              <div v-for="(testimonial, index) in currentTestimonials" :key="index" class="testimonial text-center max-w-md mx-auto mb-10">
+                <img :src="testimonial.image" :alt="testimonial.name" class="mx-auto rounded-full w-24 h-24 mb-4">
+                <h3 class="text-xl font-semibold mb-2">{{ testimonial.name }}</h3>
+                <p class="font-body text-base italic text-gray-600">{{ testimonial.testimonial }}</p>
+              </div>
             </div>
+  
+            <button @click="nextSlide" class="arrow right-arrow bg-gray-200 text-black p-2 rounded-full">
+              &rarr;
+            </button>
+          </div>
+  
+          <div class="dots mt-6 flex justify-center space-x-2">
+            <span v-for="(dot, index) in dotCount" :key="index" :class="['dot w-3 h-3 rounded-full', currentIndex === index ? 'bg-gray-400' : 'bg-gray-200']"></span>
+          </div>
         </div>
+      </div>
     </section>
-</template>
-
-<script setup>
-document.addEventListener('DOMContentLoaded', function () {
-    const carousels = document.querySelectorAll('.testimonial-carousel');
-
-    carousels.forEach((carousel) => {
-        const leftArrow = carousel.querySelector('.left-arrow');
-        const rightArrow = carousel.querySelector('.right-arrow');
-        const testimonialPairs = carousel.querySelectorAll('.testimonial-pair');
-        const dots = carousel.querySelectorAll('.dot');
-
-        let currentIndex = 0;
-
-        function updateTestimonials(index) {
-            testimonialPairs.forEach((pair, i) => {
-                pair.style.display = i === index ? 'flex' : 'none';
-            });
-            dots.forEach((dot, i) => {
-                dot.classList.toggle('bg-gray-400', i === index);
-                dot.classList.toggle('bg-gray-200', i !== index);
-            });
-        }
-
-        leftArrow.addEventListener('click', () => {
-            currentIndex = (currentIndex > 0) ? currentIndex - 1 : testimonialPairs.length - 1;
-            updateTestimonials(currentIndex);
-        });
-
-        rightArrow.addEventListener('click', () => {
-            currentIndex = (currentIndex < testimonialPairs.length - 1) ? currentIndex + 1 : 0;
-            updateTestimonials(currentIndex);
-        });
-
-        updateTestimonials(currentIndex); 
-    });
-});
-</script>
-
-<style lang="scss" scoped>
-.testimonial-container {
+  </template>
+  
+  <script setup>
+  import { ref, computed, onMounted, onUnmounted } from 'vue'
+  import getTestimonial from '../modules/getTestimonial.js'
+  
+  const { testimonials } = getTestimonial()
+  const currentIndex = ref(0)
+  const isSmallScreen = ref(window.innerWidth <= 768)
+  const testimonialsPerSlide = computed(() => (isSmallScreen.value ? 1 : 2))
+  const dotCount = computed(() => Math.ceil(testimonials.value.length / testimonialsPerSlide.value))
+  
+  const currentTestimonials = computed(() => {
+    const start = currentIndex.value * testimonialsPerSlide.value
+    return testimonials.value.slice(start, start + testimonialsPerSlide.value)
+  })
+  
+  const updateIndex = (increment) => {
+    const maxIndex = dotCount.value - 1
+    currentIndex.value = (currentIndex.value + increment + dotCount.value) % dotCount.value
+  }
+  
+  const nextSlide = () => updateIndex(1)
+  const prevSlide = () => updateIndex(-1)
+  
+  const handleResize = () => {
+    isSmallScreen.value = window.innerWidth <= 768
+  }
+  
+  window.addEventListener('resize', handleResize)
+  
+  onMounted(() => {
+    handleResize()
+  })
+  
+  onUnmounted(() => {
+    window.removeEventListener('resize', handleResize)
+  })
+  </script>
+  
+  <style lang="scss" scoped>
+  .testimonial-container {
     position: relative;
-}
-
-.arrow {
+  }
+  
+  .arrow {
     cursor: pointer;
     transition: background-color 0.3s;
-}
-
-.arrow:hover {
+  }
+  
+  .arrow:hover {
     background-color: #ccc;
-}
-
-.dots .dot {
+  }
+  
+  .dots .dot {
     transition: background-color 0.3s;
-}
-
-.dots .dot.active {
+  }
+  
+  .dots .dot.active {
     background-color: #000;
-}
-
-.testimonial-pair {
-    display: none; 
-}
-
-.testimonial-pair:first-child {
-    display: flex; 
-}
-</style>
+  }
+  </style>
+  
