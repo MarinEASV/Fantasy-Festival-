@@ -5,8 +5,8 @@
       <p class="text-lg mb-10 text-yellow px-6 font-body ">Choose the perfect pass to unlock all the magic of the Fantasy Festival!</p>
 
       <div class="flex flex-col lg:flex-row justify-center gap-4">
-        <div class="ticket bg-cover bg-no-repeat p-4 pt-16 pb-16 object-cover overflow-hidden mx-auto lg:m-0">
-          <div class="p-12">
+        <div class="ticket bg-cover bg-no-repeat pt-16 pb-16 object-cover overflow-hidden mx-auto lg:m-0">
+          <div class="p-12 md:p-16">
             <h3 class="text-3xl font-bold font-title tracking-wide mb-2 text-left">DAY QUEST</h3>
             <p class="mb-6 text-left font-body text-lg">Standard ticket - Family Quest</p>
             <div class="text-4xl text-left font-bold font-body mb-6">159.13 DKK</div>
@@ -25,8 +25,8 @@
           </div>
         </div>
 
-        <div class="ticket bg-cover bg-no-repeat p-4 pt-16 pb-16 object-cover overflow-hidden mx-auto lg:m-0 ">
-          <div class="p-12">
+        <div class="ticket bg-cover bg-no-repeat pt-16 pb-16 object-cover overflow-hidden mx-auto lg:m-0 ">
+          <div class="p-12 md:p-16">
             <h3 class="text-3xl font-bold font-title tracking-wide mb-2 text-left">EVENING QUEST</h3>
             <p class="mb-6 text-left font-body text-lg">Standard ticket - Fantasy Quest</p>
             <div class="text-4xl text-left font-bold font-body mb-6">243.13 DKK</div>
@@ -57,6 +57,7 @@
   width: 540px;
   height: auto;
   overflow: hidden;
+
   background-image: url('../assets/ticket.png');
 }
 
@@ -76,7 +77,7 @@
 
 @media (max-width: 620px) {
   .ticket {
-    width: 450px;
+    width: 80%;
     height: auto;
   }
 }

@@ -93,7 +93,7 @@ button {
 
 .navbar img {
   width: auto;
-  height: 56px;
+  height: 2.5rem;
 }
 
 .nav-menu {
