@@ -1,6 +1,6 @@
 <template>
     <section class="text-center py-24 px-6">
-        <div class="container mx-auto ">
+        <div class="container mx-auto">
             <h2 class="text-4xl md:text-5xl font-title font-semibold tracking-tight leading-relaxed mb-6 text-black">CUSTOMER TESTIMONIALS</h2>
             <p class="text-lg mb-12 font-body">
                 Hear from those who have experienced the magic of the Fantasy Festival. Our attendees share their
@@ -15,7 +15,7 @@
                 <div class="testimonials flex flex-col md:flex-row justify-center gap-10">
                     <div class="testimonial-pair flex flex-row gap-10">
                         <div class="testimonial text-center max-w-md">
-                            <img src="../assets/image-jeanette.jpg" alt="Rachel Green"
+                            <img src="../assets/image-jeanette.jpg" alt="Emma Hansen"
                                 class="mx-auto rounded-full w-24 h-24 mb-4">
                             <h3 class="text-xl font-semibold mb-2">Emma Hansen</h3>
                             <p class="font-body text-base italic text-gray-600">
@@ -28,7 +28,7 @@
                         </div>
     
                         <div class="testimonial text-center max-w-md">
-                            <img src="../assets/image-daniel.jpg" alt="Ross Geller" class="mx-auto rounded-full w-24 h-24 mb-4">
+                            <img src="../assets/image-daniel.jpg" alt="Søren Andersen" class="mx-auto rounded-full w-24 h-24 mb-4">
                             <h3 class="text-xl font-semibold mb-2">Søren Andersen</h3>
                             <p class="font-body text-base italic text-gray-600">
                                 "Fantasy Festival exceeded all my expectations! From fascinating panel discussions to immersive
@@ -42,7 +42,7 @@
     
                     <div class="testimonial-pair flex flex-row gap-10">
                         <div class="testimonial text-center max-w-md">
-                            <img src="../assets/image-kira.jpg" alt="Ross Geller" class="mx-auto rounded-full w-24 h-24 mb-4">
+                            <img src="../assets/image-kira.jpg" alt="Sofie Larsen" class="mx-auto rounded-full w-24 h-24 mb-4">
                             <h3 class="text-xl font-semibold mb-2">Sofie Larsen</h3>
                             <p class="font-body text-base italic text-gray-600">
                                 "Attending the Fantasy Festival was an unforgettable experience! The themed areas and interactive activities were incredible. I particularly enjoyed the live-action role-play events and the chance to meet my favorite fantasy authors. The atmosphere was magical, and there was something for everyone, from kids to adults. We will definitely be coming back next year!"
@@ -50,7 +50,7 @@
                         </div>
     
                         <div class="testimonial text-center max-w-md">
-                            <img src="../assets/image-jonathan.jpg" alt="Ross Geller" class="mx-auto rounded-full w-24 h-24 mb-4">
+                            <img src="../assets/image-jonathan.jpg" alt="Mads Nielsen" class="mx-auto rounded-full w-24 h-24 mb-4">
                             <h3 class="text-xl font-semibold mb-2">Mads Nielsen</h3>
                             <p class="font-body text-base italic text-gray-600">
                                 "The Fantasy Festival is a dream come true for any fantasy enthusiast. The variety of workshops and panels provided so much insight and inspiration. My favorite part was the cosplay competition, where I saw amazing costumes and met fellow fans. The whole event was well-organized, and the staff were extremely friendly and helpful. I can't recommend it enough!"
@@ -73,7 +73,9 @@
     </template>
     
     <script setup>
-    document.addEventListener('DOMContentLoaded', function () {
+    import { onMounted } from 'vue';
+    
+    onMounted(() => {
         const leftArrow = document.querySelector('.left-arrow');
         const rightArrow = document.querySelector('.right-arrow');
         const testimonialPairs = document.querySelectorAll('.testimonial-pair');
@@ -92,11 +94,13 @@
         }
     
         leftArrow.addEventListener('click', () => {
+            console.log('Left arrow clicked');
             currentIndex = (currentIndex > 0) ? currentIndex - 1 : testimonialPairs.length - 1;
             updateTestimonials(currentIndex);
         });
     
         rightArrow.addEventListener('click', () => {
+            console.log('Right arrow clicked');
             currentIndex = (currentIndex < testimonialPairs.length - 1) ? currentIndex + 1 : 0;
             updateTestimonials(currentIndex);
         });
@@ -105,7 +109,7 @@
     });
     </script>
     
-    <style lang="scss" scoped>
+    <style scoped>
     .testimonial-container {
         position: relative;
     }
@@ -129,6 +133,11 @@
     
     .testimonial-pair {
         display: none; /* Start with all pairs hidden */
+    }
+    
+    /* Display the first testimonial pair initially */
+    .testimonial-pair:first-of-type {
+        display: flex;
     }
     </style>
     
