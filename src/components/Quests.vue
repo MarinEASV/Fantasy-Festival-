@@ -39,7 +39,7 @@
     <section class="bg-dark_purple py-36 px-6 text-white">
       <div class="container mx-auto">
         <div class="flex flex-col md:flex-row items-center justify-between">
-          <div class="md:w-3/5">
+          <div class="md:w-1/2">
             <h2 class="text-4xl md:text-5xl font-bold font-title tracking-widest leading-snug pb-6">EVENING QUEST</h2>
             <p class="text-lg pb-10 font-body">
               Discover the enchantment of the Fantasy Festival after dark with our Evening Quest! Venture into
@@ -64,7 +64,7 @@
               </button>
             </a>
           </div>
-          <div class="image-content md:w-1/3 text-center">
+          <div class="image-content md:w-1/2 text-center">
             <img src="../assets/Image.png" alt="Portal with creatures" class="mx-auto">
           </div>
         </div>
