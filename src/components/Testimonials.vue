@@ -8,7 +8,7 @@
         </p>
   
         <div class="testimonial-carousel">
-          <div class="testimonial-container flex items-center justify-between">
+          <div class="testimonial-container flex items-center justify-around">
             <button @click="prevSlide" class="arrow left-arrow bg-gray-200 text-black p-2 rounded-full">
               &larr;
             </button>

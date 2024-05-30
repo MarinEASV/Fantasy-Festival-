@@ -7,7 +7,7 @@
     <img src="../assets/HERO/Hero-BG-mobile.jpg" alt="Background Mobile" class="z-0 w-full h-full object-cover background-mobile">
 
     <!-- Always Visible Heading -->
-    <h1 :class="{ 'heading': true, 'static-heading': isMobile }" class="text-8xl sm:text-9xl absolute text-white text-center z-20 w-full font-title font-semibold">Fantasy Quest</h1>
+    <h1 :class="{ 'heading': true, 'static-heading': isMobile }" class="text-7xl sm:text-9xl absolute text-white text-center z-20 w-full font-title font-semibold">Fantasy Quest</h1>
 
     <!-- Parallax Layers -->
     <img src="../assets/HERO/statues.png" alt="Statues" class="z-50 parallax-layer statues">
