@@ -14,7 +14,7 @@
       <span :class="{ 'bar': true, 'active': isMenuOpen }" v-for="n in 3" :key="n"></span>
     </div>
     <a v-if="isButtonVisible" href="#tickets">
-      <button class="bg-yellow hover:bg-amber-400 text-black font-bold font-body px-5 py-2">BUY TICKET!</button>
+      <button class="bg-yellow hover:bg-amber-400 text-black font-bold font-body px-5 py-2">BUY TICKET</button>
     </a>
   </nav>
 </template>
