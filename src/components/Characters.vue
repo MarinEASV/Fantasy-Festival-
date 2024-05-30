@@ -1,14 +1,11 @@
 <template>
-  <section class="py-28 px-6" id="characters">
-    <div class="container mx-auto text-center">
-      <h2 class="text-5xl font-bold font-title tracking-wider leading-snug mb-4">MEET OUR CHARACTERS</h2>
-      <p class="font-body text-lg mb-12">Step into a world of enchantment with our diverse cast of characters. <br> From brave
-        heroes to mystical creatures, each one brings unique magic to the Fantasy Festival.</p>
-  
-      <div class="character-container flex items-center justify-between">
-        <button class="arrow left-arrow bg-gray-200 text-black p-2 rounded-full">
-          &larr;
-        </button>
+    <section class="py-28 px-6" id="characters">
+      <div class="container mx-auto text-center">
+        <h2 class="text-4xl md:text-5xl font-bold font-title tracking-wider leading-snug mb-4">MEET OUR CHARACTERS</h2>
+        <p class="font-body text-lg mb-12">Step into a world of enchantment with our diverse cast of characters. <br> From brave
+          heroes to mystical creatures, each one brings unique magic to the Fantasy Festival.</p>
+        
+        <div class="flex flex-wrap justify-center justify-items-center items-center gap-8">
   
         <div class="characters flex flex-col md:flex-row justify-center gap-10">
           <div class="character-group flex flex-row gap-10">
