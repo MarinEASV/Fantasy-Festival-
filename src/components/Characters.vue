@@ -22,7 +22,7 @@
   
             <div class="character-item relative" @mouseenter="playVideo($event)" @mouseleave="pauseVideo($event)">
               <video class="character-video" loop muted>
-                <source src="../assets/videos/Arkivaren_color_soft_animation.mov" type="video/mp4">
+                <source src="../assets/videos/Arkivaren_animation.mov" type="video/mp4">
                 Your browser does not support the video tag.
               </video>
               <p class="character-name absolute bottom-0 text-yellow bg-dark_purple px-4 py-2 font-body">Arkivaren</p>
@@ -48,22 +48,13 @@
   
             <div class="character-item relative" @mouseenter="playVideo($event)" @mouseleave="pauseVideo($event)">
               <video class="character-video" loop muted>
-                <source src="../assets/videos/Gnist_color_Soft_animation.mov" type="video/mp4">
+                <source src="../assets/videos/Gnist_animation.mov" type="video/mp4">
                 Your browser does not support the video tag.
               </video>
               <p class="character-name absolute bottom-0 text-yellow bg-dark_purple px-4 py-2 font-body">Gnist</p>
             </div>
           </div>
   
-          <div class="character-group flex flex-row justify-center gap-10">
-            <div class="character-item last-character relative" @mouseenter="playVideo($event)" @mouseleave="pauseVideo($event)">
-              <video class="character-video" loop muted>
-                <source src="../assets/videos/Vogterk├ªmper_animation.mov" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-              <p class="character-name absolute bottom-0 text-yellow bg-dark_purple px-4 py-2 font-body">Arkivaren</p>
-            </div>
-          </div>
         </div>
   
         <button class="arrow right-arrow bg-gray-200 text-black p-2 rounded-full">
@@ -73,7 +64,6 @@
   
       <div class="dots mt-6 flex justify-center space-x-2">
         <span class="dot w-3 h-3 bg-gray-400 rounded-full"></span>
-        <span class="dot w-3 h-3 bg-gray-200 rounded-full"></span>
         <span class="dot w-3 h-3 bg-gray-200 rounded-full"></span>
       </div>
     </div>
@@ -128,58 +118,66 @@
   </script>
   
   <style lang="scss" scoped>
-  .character-container {
-    position: relative;
-  }
-  
-  .arrow {
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .arrow:hover {
-    background-color: #ccc;
-  }
-  
-  .dots .dot {
-    transition: background-color 0.3s;
-  }
-  
-  .dots .dot.active {
-    background-color: #000;
-  }
-  
+.character-container {
+  position: relative;
+}
+
+.arrow {
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.arrow:hover {
+  background-color: #ccc;
+}
+
+.dots .dot {
+  transition: background-color 0.3s;
+}
+
+.dots .dot.active {
+  background-color: #000;
+}
+
+.character-group {
+  display: none; /* Start with all groups hidden */
+}
+
+.character-item {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s;
+  width: 300px;
+  height: 400px;
+}
+
+.character-item:hover {
+  transform: scale(1.05);
+}
+
+.character-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.character-name {
+  font-size: 1.5rem;
+  text-align: center;
+  width: 100%;
+}
+
+@media screen and (max-width: 640px) {
   .character-group {
-    display: none; /* Start with all groups hidden */
+    flex-direction: column;
+    gap: 20px; /* Adjust spacing between items */
   }
-  
+
   .character-item {
-    position: relative;
-    overflow: hidden;
-    transition: transform 0.3s;
-    width: 300px;
-    height: 400px;
+    width: 100%; /* Make items occupy full width */
+    max-width: none; /* Reset max-width */
+    height: auto; /* Allow height to adjust based on content */
   }
-  
-  .character-item:hover {
-    transform: scale(1.05);
-  }
-  
-  .character-video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .character-name {
-    font-size: 1.5rem;
-    text-align: center;
-    width: 100%;
-  }
-  
-  .last-character {
-    width: 600px;
-    height: 400px;
-  }
-  </style>
+}
+</style>
   

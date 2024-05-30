@@ -1,22 +1,22 @@
 <template>
     <section class="flex justify-center items-center bg-yellow pt-28 pb-4 px-6">
       <div class="grid grid-cols-2 gap-4 text-6xl font-bold font-title text-dark_purple md:flex md:space-x-4">
-        <div class="flex flex-col items-center border border-dark_purple p-6 w-full h-32 md:w-40 md:h-40">
+        <div class="flex flex-col items-center justify-between border border-dark_purple p-6 w-full h-32 md:w-40 md:h-40">
           <span>{{ days }}</span>
           <span class="text-xl font-body mt-3">DAYS</span>
         </div>
   
-        <div class="flex flex-col items-center border border-dark_purple p-6 w-full h-32 md:w-40 md:h-40">
+        <div class="flex flex-col items-center justify-between border border-dark_purple p-6 w-full h-32 md:w-40 md:h-40">
           <span>{{ hours }}</span>
           <span class="text-xl font-body mt-3">HOURS</span>
         </div>
   
-        <div class="flex flex-col items-center border border-dark_purple p-6 w-full h-32 md:w-40 md:h-40">
+        <div class="flex flex-col items-center justify-between border border-dark_purple p-6 w-full h-32 md:w-40 md:h-40">
           <span>{{ minutes }}</span>
           <span class="text-xl font-body mt-3">MINUTES</span>
         </div>
   
-        <div class="flex flex-col items-center border border-dark_purple p-6 w-full h-32 md:w-40 md:h-40">
+        <div class="flex flex-col items-center justify-between border border-dark_purple p-6 w-full h-32 md:w-40 md:h-40">
           <span>{{ seconds }}</span>
           <span class="text-xl font-body mt-3">SECONDS</span>
         </div>

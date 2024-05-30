@@ -1,4 +1,4 @@
-import { ref } from 'vue'
+import { h, ref } from 'vue'
 
 import daniel from '../assets/image-daniel.jpg'
 import jonathan from '../assets/image-jonathan.jpg'
