@@ -1,7 +1,7 @@
 <template>
   <section class="py-28 px-6" id="characters">
     <div class="container mx-auto text-center">
-      <h2 class="text-5xl font-bold font-title tracking-wider leading-snug mb-4">MEET OUR CHARACTERS</h2>
+      <h2 class="text-4xl md:fm font-bold font-title tracking-wider leading-snug mb-4">MEET OUR CHARACTERS</h2>
       <p class="font-body text-lg mb-12">Step into a world of enchantment with our diverse cast of characters. <br> From brave
         heroes to mystical creatures, each one brings unique magic to the Fantasy Festival.</p>
   
