@@ -48,7 +48,8 @@
                 </div>
             </div>
         </div>
-        <div class="flex justify-center text-center mt-14 ">
+        <div class="flex items-center justify-center flex-col text-center mt-10 ">
+            <hr class="h-px my-20 border-1 w-5/6 self-center   ">
             <p>&copy; 2024 Created by MJCG</p>
         </div>
     </footer>
