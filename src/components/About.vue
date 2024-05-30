@@ -3,7 +3,7 @@
 
 <div class="container md:columns-2  mx-auto">
     <p class="text-lg mb-4 text-yellow">About the Fantasy Festival</p>
-    <h2 class="text-6xl pb-6 break-after-column font-title leading-snug tracking-wide text-yellow">Join Us at the Fantasy Festival 2024 in Esbjerg </h2>
+    <h2 class="text-5xl md:text-6xl pb-6 break-after-column font-title leading-tight  tracking-wide text-yellow">Join Us at the Fantasy Festival 2024 in Esbjerg </h2>
       <p class="text-lg font-body">Fantasy Festival is a grand celebration of the fantasy genre in all its forms, uniting enthusiasts of all ages. Held annually on the third weekend of September, this year’s festival will take place on September 16th and 17th, 2023. Our festival offers diverse activities designed to captivate adults, young people, and children, fostering a love for fantasy literature and magic. <br><br>
         This year’s theme, "Monsters and Magical Creatures," promises a thrilling lineup of events and guests. Enjoy lectures and panels featuring RF Kuang, Katja Brandis, Jim Butcher, Anne-Marie Vedsø Olesen, and Josefine Ottesen. The festival also features academic talks by experts like Jakob Levinsen and Mathias Clasen, and a dedicated children’s area with workshops led by creators such as Mette Finderup and Jan Kjær. Beyond literature, enjoy illustrations, board games, films, and live podcasts. Experience the magic at Musikhuset Esbjerg with film music concerts and unique screenings at Nordisk Film Cinemas. See you in Esbjerg, where the magic is unleashed!  </p>
   </div>
