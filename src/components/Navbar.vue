@@ -82,6 +82,9 @@ button{
   justify-content: space-between;
 }
 
+
+
+
 .navbar img {
   width: auto;
   height: 64px;
@@ -132,6 +135,12 @@ button{
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     background-color: var(--clr-White, #fff);
+  }
+}
+
+@media (max-width: 1200px) {
+  button{
+    display: none;
   }
 }
 </style>
