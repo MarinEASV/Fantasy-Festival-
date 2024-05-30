@@ -1,7 +1,7 @@
 <template>
   <section class="text-center pb-28 bg-dark_purple" id="tickets" >
     <div class="container mx-auto">
-      <h2 class="text-5xl px-6 font-semibold font-title tracking-widest leading-snug mb-4 text-yellow">SELECT YOUR PASS</h2>
+      <h2 class="text-4xl md:text-5xl px-6 font-semibold font-title tracking-widest leading-snug mb-4 text-yellow">SELECT YOUR PASS</h2>
       <p class="text-lg mb-10 text-yellow px-6 font-body ">Choose the perfect pass to unlock all the magic of the Fantasy Festival!</p>
 
       <div class="flex flex-col lg:flex-row justify-center gap-4">

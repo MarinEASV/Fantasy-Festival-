@@ -3,7 +3,7 @@
         <div class="container mx-auto pt-28">
             <div class="flex flex-col md:flex-row items-center mb-24 ">
                 <div class="md:w-1/2">
-                    <h2 class="text-5xl font-bold font-title tracking-widest pb-6">DAY QUEST</h2>
+                    <h2 class="text-4xl md:text-5xl font-bold font-title tracking-widest pb-6">DAY QUEST</h2>
                     <p class="text-lg pb-10 font-body ">Challenge on an epic Day Quest at the Fantasy Festival! This interactive
                         adventure will take you on a journey through the festival grounds, challenging you with puzzles,
                         riddles, and tasks inspired by your favorite fantasy stories. Perfect for adventurers of all
@@ -41,7 +41,7 @@
         <div class="container mx-auto">
             <div class="flex flex-col md:flex-row items-center justify-between">
                 <div class="md:w-3/5  ">
-                    <h2 class="text-5xl font-bold font-title tracking-widest leading-snug pb-6">EVENING QUEST</h2>
+                    <h2 class="text-4xl md:text-5xl font-bold font-title tracking-widest leading-snug pb-6">EVENING QUEST</h2>
                     <p class="text-lg pb-10 font-body">
                         Discover the enchantment of the Fantasy Festival after dark with our Evening Quest! Venture into
                         the night alongside fellow adventurers for a mystical journey filled with puzzles, challenges,
