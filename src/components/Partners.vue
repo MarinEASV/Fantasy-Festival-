@@ -3,7 +3,7 @@
         <h2 class=" text-white text-4xl md:text-5xl text-center font-semibold tracking-widest leading-snug mb-8 font-title">MEET YOU THERE!</h2>
         <a class="mx-auto" href="#tickets">
             <button class="bg-yellow hover:bg-amber-400 text-black font-bold font-body p-4 px-20 text-lg mt-4">
-                Get your ticket!
+                Get your ticket
             </button>
         </a>
     </section>
