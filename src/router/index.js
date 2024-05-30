@@ -8,7 +8,7 @@ const router = createRouter({
 })
 
 router.beforeEach((to, from, next) => {
-  document.title = `Fantasy Quest ${to.meta.title}`
+  document.title = `Fantasy Quest`
   next()
 })
 
